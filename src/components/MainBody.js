@@ -16,7 +16,7 @@ function MainBody() {
           <img src={two} alt="" />
           <img src={three} alt="" />
           <img src={four} alt="" />
-          <img src={six} alt="" />
+          {/* <img src={six} alt="" /> */}
         </BodyGridWrapper>
       </BodyWrapper>
     </>
