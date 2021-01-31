@@ -16,6 +16,8 @@ function MainBody() {
           <img src={two} alt="" />
           <img src={three} alt="" />
           <img src={four} alt="" />
+          <img src={one} alt="" />
+          <img src={three} alt="" />
           {/* <img src={six} alt="" /> */}
         </BodyGridWrapper>
       </BodyWrapper>
@@ -35,12 +37,15 @@ const BodyGridWrapper = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 7rem;
-  /* border: 1px solid red; */
-  span:nth-child(2n + 1) {
-    display: block;
-    color: red;
+  @media only screen and (min-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
   }
+  @media only screen and (min-width: 375px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  gap: 5rem;
+  /* border: 1px solid red; */
+
   img {
     width: 60rem;
     justify-self: center;

@@ -1,11 +1,19 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
 import styled from 'styled-components'
 
 function Header() {
+  const history = useHistory()
   return (
     <>
       <HeaderWrapper>
-        <span>PROFILE</span>
+        <span
+          onClick={() => {
+            history.push('./profile')
+          }}
+        >
+          PROFILE
+        </span>
         <span>蟻</span>
         <span></span>
       </HeaderWrapper>
