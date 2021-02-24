@@ -1,14 +1,20 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
 import styled from 'styled-components'
 import LandingImg from '../img/mainImg.jpeg'
 import BlankTop from './BlankTop'
 
 function Landing() {
+  const history = useHistory()
   return (
     <BodyWrapper>
       <BodyGridWrapper>
         {/* <img src={LandingImg} alt="" /> */}
-        <ImgContainer>
+        <ImgContainer
+          onClick={() => {
+            history.push('./main')
+          }}
+        >
           <img src={LandingImg} alt="" />
           <Overlay>
             <Text>Main</Text>
@@ -41,11 +47,14 @@ const Overlay = styled.div`
   background-color: #fff;
   &:hover {
     opacity: 0.5;
+    Text {
+    }
   }
 `
 const Text = styled.div`
   color: black;
   font-size: 5rem;
+  font-weight: 500;
   position: absolute;
   opacity: 1;
   top: 50%;

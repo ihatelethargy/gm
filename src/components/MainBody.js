@@ -58,7 +58,7 @@ const ImgContainer = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
-  width: 80%;
+  width: 35%;
   cursor: pointer;
   /* &:hover {
     opacity: 0.5;
