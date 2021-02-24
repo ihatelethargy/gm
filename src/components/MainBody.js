@@ -15,14 +15,14 @@ function MainBody() {
           <ImgContainer>
             <img src={one} alt="" />
             <Overlay>
-              <Text>first piece</Text>
+              <Text>BLACK</Text>
             </Overlay>
           </ImgContainer>
 
           <ImgContainer>
             <img src={two} alt="" />
             <Overlay>
-              <Text>seconet section</Text>
+              <Text>NOT BLACK</Text>
             </Overlay>
           </ImgContainer>
         </BodyGridWrapper>
@@ -37,7 +37,8 @@ const ImgContainer = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
-  width: 45%;
+  width: 85%;
+  margin-bottom: 30rem;
   cursor: pointer;
   /* &:hover {
     opacity: 0.5;
@@ -80,9 +81,9 @@ const BodyWrapper = styled.div`
 const BodyGridWrapper = styled.div`
   width: 100%;
   display: flex;
-  border: 1px solid red;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   grid-template-columns: repeat(2, 1fr);
   /* flex-direction: column; */
   /* @media only screen and (min-width: 768px) {

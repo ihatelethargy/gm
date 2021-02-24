@@ -47,7 +47,7 @@ const HeaderWrapper = styled.div`
   }
   span:nth-child(1):hover {
     cursor: pointer;
-    font-size: 1.6rem;
+    font-size: 3.8rem;
     font-family: Helvetica;
     color: gray;
   }
