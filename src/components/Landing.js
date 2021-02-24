@@ -1,7 +1,7 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
 import styled from 'styled-components'
-import LandingImg from '../img/mainImg.jpeg'
+import LandingImg from '../img/mainlanding.jpeg'
 import BlankTop from './BlankTop'
 
 function Landing() {
@@ -31,7 +31,7 @@ const ImgContainer = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
-  width: 90%;
+  width: 85%;
   cursor: pointer;
 `
 const Overlay = styled.div`
@@ -67,7 +67,7 @@ const Text = styled.div`
 `
 
 const BodyWrapper = styled.div`
-  padding-top: 10vh;
+  padding-top: 15vh;
   width: 100%;
   height: 100vh;
   background-color: #f5f4f4;
