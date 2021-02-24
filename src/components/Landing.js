@@ -1,7 +1,7 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
 import styled from 'styled-components'
-import LandingImg from '../img/landingImgFinal.jpeg'
+import LandingImg from '../img/mainlanding.jpeg'
 import BlankTop from './BlankTop'
 
 function Landing() {
