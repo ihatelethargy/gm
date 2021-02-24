@@ -21,7 +21,7 @@ function Header() {
         >
           蟻
         </span>
-        <span>WORKS</span>
+        <span>PROJECTS</span>
       </HeaderWrapper>
     </>
   )
