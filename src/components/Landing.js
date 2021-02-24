@@ -7,25 +7,45 @@ import BlankTop from './BlankTop'
 function Landing() {
   const history = useHistory()
   return (
-    <BodyWrapper>
-      <BodyGridWrapper>
-        {/* <img src={LandingImg} alt="" /> */}
-        <ImgContainer
-          onClick={() => {
-            history.push('./main')
-          }}
-        >
-          <img src={LandingImg} alt="" />
-          <Overlay>
-            <Text>Main</Text>
-          </Overlay>
-        </ImgContainer>
-      </BodyGridWrapper>
-    </BodyWrapper>
+    <>
+      <TopHeader>
+        <span>WORK!</span>
+      </TopHeader>
+      <BodyWrapper>
+        <BodyGridWrapper>
+          {/* <img src={LandingImg} alt="" /> */}
+          <ImgContainer
+            onClick={() => {
+              history.push('./main')
+            }}
+          >
+            <img src={LandingImg} alt="" />
+            <Overlay>
+              <Text>Main</Text>
+            </Overlay>
+          </ImgContainer>
+        </BodyGridWrapper>
+      </BodyWrapper>
+    </>
   )
 }
 
 export default Landing
+
+const TopHeader = styled.div`
+  width: 100%;
+  height: 15rem;
+  background-color: #f5f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  span {
+    /* font-family: Helvetica; */
+    font-size: 8.2rem;
+    font-weight: 800;
+    font-stretch: expanded;
+  }
+`
 
 const ImgContainer = styled.div`
   display: flex;
@@ -68,7 +88,7 @@ const Text = styled.div`
 `
 
 const BodyWrapper = styled.div`
-  padding-top: 15rem;
+  /* padding-top: 15rem; */
   width: 100%;
   height: 100vh;
   background-color: #f5f4f4;
