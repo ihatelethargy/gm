@@ -10,6 +10,9 @@ import seven from '../img/7.jpeg'
 function MainBody() {
   return (
     <>
+      <TopHeader>
+        <span>CATEGORY</span>
+      </TopHeader>
       <BodyWrapper>
         <BodyGridWrapper>
           <ImgContainer>
@@ -33,12 +36,27 @@ function MainBody() {
 
 export default MainBody
 
+const TopHeader = styled.div`
+  width: 100%;
+  height: 15rem;
+  background-color: #f5f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  span {
+    font-family: Helvetica;
+    font-size: 8.2rem;
+    font-weight: 800;
+    font-stretch: expanded;
+  }
+`
+
 const ImgContainer = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
-  width: 85%;
-  margin-bottom: 20rem;
+  width: 90%;
+  margin-bottom: 2rem;
   cursor: pointer;
   /* &:hover {
     opacity: 0.5;
