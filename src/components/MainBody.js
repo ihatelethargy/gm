@@ -25,27 +25,6 @@ function MainBody() {
               <Text>seconet section</Text>
             </Overlay>
           </ImgContainer>
-
-          <ImgContainer>
-            <img src={three} alt="" />
-            <Overlay>
-              <Text>third section</Text>
-            </Overlay>
-          </ImgContainer>
-
-          <ImgContainer>
-            <img src={four} alt="" />
-            <Overlay>
-              <Text>fourth section</Text>
-            </Overlay>
-          </ImgContainer>
-
-          <ImgContainer>
-            <img src={one} alt="" />
-            <Overlay>
-              <Text>five sec</Text>
-            </Overlay>
-          </ImgContainer>
         </BodyGridWrapper>
       </BodyWrapper>
     </>
@@ -58,7 +37,7 @@ const ImgContainer = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
-  width: 35%;
+  width: 45%;
   cursor: pointer;
   /* &:hover {
     opacity: 0.5;
@@ -95,23 +74,24 @@ const Text = styled.div`
 const BodyWrapper = styled.div`
   padding-top: 10vh;
   width: 100%;
-  height: auto;
+  height: 100vh;
   background-color: #f5f4f4;
 `
 const BodyGridWrapper = styled.div`
   width: 100%;
   display: flex;
+  border: 1px solid red;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   grid-template-columns: repeat(2, 1fr);
-  @media only screen and (min-width: 768px) {
+  /* flex-direction: column; */
+  /* @media only screen and (min-width: 768px) {
     grid-template-columns: repeat(1, 1fr);
   }
   @media only screen and (min-width: 375px) {
     grid-template-columns: repeat(1, 1fr);
-  }
-  gap: 5rem;
+  } */
+  /* gap: 5rem; */
   /* border: 1px solid red; */
 
   img {

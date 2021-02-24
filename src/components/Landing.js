@@ -67,6 +67,7 @@ const Text = styled.div`
 `
 
 const BodyWrapper = styled.div`
+  padding-top: 10vh;
   width: 100%;
   height: 100vh;
   background-color: #f5f4f4;
@@ -75,7 +76,6 @@ const BodyWrapper = styled.div`
 const BodyGridWrapper = styled.div`
   /* border: 1px solid red; */
   width: 100%;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
