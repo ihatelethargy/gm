@@ -101,7 +101,7 @@ const Overlay = styled.div`
 `
 const Text = styled.div`
   color: black;
-  font-size: 8rem;
+  font-size: 80px;
   position: absolute;
   top: 50%;
   left: 50%;

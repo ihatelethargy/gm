@@ -40,7 +40,7 @@ const TopHeader = styled.div`
   align-items: center;
   justify-content: center;
   span {
-    /* font-family: Helvetica; */
+    font-family: Helvetica;
     font-size: 8.2rem;
     font-weight: 800;
     font-stretch: expanded;
@@ -74,7 +74,7 @@ const Overlay = styled.div`
 `
 const Text = styled.div`
   color: black;
-  font-size: 5rem;
+  font-size: 80px;
   font-weight: 500;
   position: absolute;
   opacity: 1;
