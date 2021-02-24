@@ -21,7 +21,7 @@ function Header() {
         >
           蟻
         </span>
-        <span></span>
+        <span>WORKS</span>
       </HeaderWrapper>
     </>
   )
@@ -32,7 +32,7 @@ export default Header
 const HeaderWrapper = styled.div`
   display: flex;
   z-index: 1000;
-  justify-content: space-between;
+  justify-content: space-around;
   position: fixed;
   align-items: center;
   width: 100%;
@@ -41,7 +41,7 @@ const HeaderWrapper = styled.div`
 
   span:nth-child(1) {
     font-size: 3.8rem;
-    margin-left: 5rem;
+    /* margin-left: 5rem; */
   }
   span:nth-child(1):hover {
     cursor: pointer;
@@ -50,7 +50,12 @@ const HeaderWrapper = styled.div`
   }
   span:nth-child(2) {
     font-size: 4.2rem;
-    margin-right: 17rem;
+    /* margin-right: 17rem; */
+  }
+
+  span:nth-child(3) {
+    font-size: 3.8rem;
+    /* margin-right: 17rem; */
   }
 
   span:nth-child(2):hover {
