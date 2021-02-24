@@ -1,20 +1,53 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
 import styled from 'styled-components'
 import ProfileImg from '../img/profileimg.png'
 import BlankTop from './BlankTop'
 
 function Profile() {
+  const history = useHistory()
   return (
-    <BodyWrapper>
-      <BodyGridWrapper>
-        <BlankTop DesktopMargin="0" TabletMargin="5" MobileMargin="5" />
-        <img src={ProfileImg} alt="" />
-      </BodyGridWrapper>
-    </BodyWrapper>
+    <>
+      <TopHeader>
+        <span
+          onClick={() => {
+            history.push('/')
+          }}
+        >
+          KIMGAEMI
+        </span>
+      </TopHeader>
+      <BodyWrapper>
+        <BodyGridWrapper>
+          <BlankTop DesktopMargin="0" TabletMargin="5" MobileMargin="5" />
+          {/* <img src={ProfileImg} alt="" /> */}
+        </BodyGridWrapper>
+      </BodyWrapper>
+    </>
   )
 }
 
 export default Profile
+
+const TopHeader = styled.div`
+  width: 100%;
+  height: 15rem;
+  background-color: #f5f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  span {
+    font-family: Helvetica;
+    font-size: 8.2rem;
+    font-weight: 800;
+    font-stretch: expanded;
+  }
+
+  &:hover {
+    color: gray;
+  }
+`
 
 const BodyWrapper = styled.div`
   padding-top: 10vh;

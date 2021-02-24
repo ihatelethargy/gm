@@ -15,7 +15,13 @@ function Header() {
           PROFILE
         </span>
 
-        <span>PROJECTS</span>
+        <span
+          onClick={() => {
+            history.push('./main')
+          }}
+        >
+          PROJECTS
+        </span>
       </HeaderWrapper>
     </>
   )
