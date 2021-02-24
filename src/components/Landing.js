@@ -1,7 +1,7 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
 import styled from 'styled-components'
-import LandingImg from '../img/mainlanding.jpeg'
+import LandingImg from '../img/landingImgFinal.jpeg'
 import BlankTop from './BlankTop'
 
 function Landing() {
@@ -39,9 +39,11 @@ function Landing() {
 export default Landing
 
 const TopHeader = styled.div`
+  position: fixed;
+  z-index: 1000;
   width: 100%;
   height: 15rem;
-  background-color: #f5f4f4;
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,6 +53,7 @@ const TopHeader = styled.div`
     font-size: 8.2rem;
     font-weight: 800;
     font-stretch: expanded;
+    color: #314e52;
   }
 
   &:hover {
@@ -62,8 +65,8 @@ const ImgContainer = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
-  width: 85%;
-  height: 130rem;
+  width: 100%;
+  height: 92vh;
   cursor: pointer;
 `
 const Overlay = styled.div`

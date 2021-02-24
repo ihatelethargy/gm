@@ -43,29 +43,35 @@ const HeaderWrapper = styled.div`
   span:nth-child(1) {
     font-size: 3.8rem;
     font-family: Helvetica;
+    color: #314e52;
+    font-weight: 800;
     /* margin-left: 5rem; */
   }
   span:nth-child(1):hover {
     cursor: pointer;
     font-size: 3.8rem;
     font-family: Helvetica;
-    color: gray;
+    color: #314e52;
   }
   span:nth-child(2) {
     font-size: 3.8rem;
     font-family: Helvetica;
     /* margin-right: 17rem; */
+    color: #314e52;
+    font-weight: 800;
   }
 
   span:nth-child(3) {
     font-size: 3.8rem;
     font-family: Helvetica;
     /* margin-right: 17rem; */
+    color: #314e52;
   }
 
   span:nth-child(2):hover {
     cursor: pointer;
     color: gray;
     font-family: Helvetica;
+    color: #314e52;
   }
 `
