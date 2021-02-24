@@ -14,7 +14,13 @@ function Header() {
         >
           PROFILE
         </span>
-        <span>蟻</span>
+        <span
+          onClick={() => {
+            history.push('/')
+          }}
+        >
+          蟻
+        </span>
         <span></span>
       </HeaderWrapper>
     </>
@@ -25,6 +31,7 @@ export default Header
 
 const HeaderWrapper = styled.div`
   display: flex;
+  z-index: 1000;
   justify-content: space-between;
   position: fixed;
   align-items: center;
@@ -44,5 +51,10 @@ const HeaderWrapper = styled.div`
   span:nth-child(2) {
     font-size: 3.2rem;
     margin-right: 9rem;
+  }
+
+  span:nth-child(2):hover {
+    cursor: pointer;
+    color: gray;
   }
 `

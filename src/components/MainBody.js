@@ -12,13 +12,40 @@ function MainBody() {
     <>
       <BodyWrapper>
         <BodyGridWrapper>
-          <img src={one} alt="" />
-          <img src={two} alt="" />
-          <img src={three} alt="" />
-          <img src={four} alt="" />
-          <img src={one} alt="" />
-          <img src={three} alt="" />
-          {/* <img src={six} alt="" /> */}
+          <ImgContainer>
+            <img src={one} alt="" />
+            <Overlay>
+              <Text>first piece</Text>
+            </Overlay>
+          </ImgContainer>
+
+          <ImgContainer>
+            <img src={two} alt="" />
+            <Overlay>
+              <Text>seconet section</Text>
+            </Overlay>
+          </ImgContainer>
+
+          <ImgContainer>
+            <img src={three} alt="" />
+            <Overlay>
+              <Text>third section</Text>
+            </Overlay>
+          </ImgContainer>
+
+          <ImgContainer>
+            <img src={four} alt="" />
+            <Overlay>
+              <Text>fourth section</Text>
+            </Overlay>
+          </ImgContainer>
+
+          <ImgContainer>
+            <img src={one} alt="" />
+            <Overlay>
+              <Text>five sec</Text>
+            </Overlay>
+          </ImgContainer>
         </BodyGridWrapper>
       </BodyWrapper>
     </>
@@ -26,6 +53,44 @@ function MainBody() {
 }
 
 export default MainBody
+
+const ImgContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 80%;
+  cursor: pointer;
+  /* &:hover {
+    opacity: 0.5;
+  } */
+`
+const Overlay = styled.div`
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #fff;
+  &:hover {
+    opacity: 0.5;
+  }
+`
+const Text = styled.div`
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 100;
+`
 
 const BodyWrapper = styled.div`
   padding-top: 10vh;
@@ -35,7 +100,10 @@ const BodyWrapper = styled.div`
 `
 const BodyGridWrapper = styled.div`
   width: 100%;
-  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   grid-template-columns: repeat(2, 1fr);
   @media only screen and (min-width: 768px) {
     grid-template-columns: repeat(1, 1fr);
@@ -47,8 +115,9 @@ const BodyGridWrapper = styled.div`
   /* border: 1px solid red; */
 
   img {
-    width: 60rem;
+    width: 100%;
     justify-self: center;
+    display: block;
     cursor: pointer;
     &:hover {
       opacity: 0.6;

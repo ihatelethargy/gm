@@ -7,12 +7,12 @@ import {
   useHistory,
 } from 'react-router-dom'
 import Main from './pages/Main'
+import Profile from './components/Profile'
 
 function App() {
   return (
     <Router>
       <Route component={Main} exact />
-      {/* <Route component={}> */}
     </Router>
   )
 }
