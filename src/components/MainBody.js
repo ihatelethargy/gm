@@ -13,6 +13,7 @@ function MainBody() {
       <TopHeader>
         <span>CATEGORY</span>
       </TopHeader>
+
       <BodyWrapper>
         <BodyGridWrapper>
           <ImgContainer>
@@ -29,6 +30,9 @@ function MainBody() {
             </Overlay>
           </ImgContainer>
         </BodyGridWrapper>
+        <SmallDesc>
+          <span>Enjoy it happily</span>
+        </SmallDesc>
       </BodyWrapper>
     </>
   )
@@ -36,13 +40,31 @@ function MainBody() {
 
 export default MainBody
 
-const TopHeader = styled.div`
+const SmallDesc = styled.div`
   width: 100%;
-  height: 15rem;
+  height: 20rem;
+  /* border: 1px solid green; */
   background-color: #f5f4f4;
   display: flex;
   align-items: center;
   justify-content: center;
+  span {
+    font-family: Helvetica;
+    font-size: 3rem;
+    font-weight: 800;
+    font-stretch: expanded;
+  }
+`
+
+const TopHeader = styled.div`
+  width: 100%;
+  height: 15rem;
+  /* border: 1px solid red; */
+  background-color: #f5f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 8rem;
   span {
     font-family: Helvetica;
     font-size: 8.2rem;
@@ -91,13 +113,14 @@ const Text = styled.div`
 `
 
 const BodyWrapper = styled.div`
-  padding-top: 10vh;
+  padding-top: 1vh;
   width: 100%;
   height: 100vh;
   background-color: #f5f4f4;
 `
 const BodyGridWrapper = styled.div`
   width: 100%;
+  /* border: 1px solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
