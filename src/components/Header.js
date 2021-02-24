@@ -19,7 +19,7 @@ function Header() {
             history.push('/')
           }}
         >
-          蟻
+          KIMGAEMI
         </span>
         <span>PROJECTS</span>
       </HeaderWrapper>
@@ -34,6 +34,7 @@ const HeaderWrapper = styled.div`
   z-index: 1000;
   justify-content: space-around;
   position: fixed;
+  bottom: 0;
   align-items: center;
   width: 100%;
   height: 8vh;
@@ -49,7 +50,7 @@ const HeaderWrapper = styled.div`
     color: gray;
   }
   span:nth-child(2) {
-    font-size: 4.2rem;
+    font-size: 3.8rem;
     /* margin-right: 17rem; */
   }
 

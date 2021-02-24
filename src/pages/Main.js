@@ -10,7 +10,6 @@ function Main() {
   return (
     <>
       <Route component={Header} />
-
       <Route component={Landing} path="/" exact />
       {/* <BlankTop DesktopMargin="5" TabletMargin="5" MobileMargin="5" /> */}
       <Route component={MainBody} path="/main" exact />

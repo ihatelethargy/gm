@@ -68,7 +68,7 @@ const Text = styled.div`
 `
 
 const BodyWrapper = styled.div`
-  padding-top: 15vh;
+  padding-top: 15rem;
   width: 100%;
   height: 100vh;
   background-color: #f5f4f4;
