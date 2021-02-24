@@ -38,7 +38,7 @@ const ImgContainer = styled.div`
   justify-content: center;
   position: relative;
   width: 85%;
-  margin-bottom: 30rem;
+  margin-bottom: 20rem;
   cursor: pointer;
   /* &:hover {
     opacity: 0.5;
