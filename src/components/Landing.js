@@ -31,7 +31,7 @@ const ImgContainer = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
-  width: 70%;
+  width: 90%;
   cursor: pointer;
 `
 const Overlay = styled.div`
@@ -67,21 +67,20 @@ const Text = styled.div`
 `
 
 const BodyWrapper = styled.div`
-  /* padding-top: 10vh;e */
   width: 100%;
   height: 100vh;
   background-color: #f5f4f4;
+  /* background-color: black; */
 `
 const BodyGridWrapper = styled.div`
+  /* border: 1px solid red; */
   width: 100%;
   height: 100vh;
-  /* border: 1px solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
   img {
     width: 100%;
-    /* height: 70%; */
     justify-self: center;
     display: block;
     cursor: pointer;
