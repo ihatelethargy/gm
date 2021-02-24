@@ -19,7 +19,7 @@ function Header() {
             history.push('/')
           }}
         >
-          KIMGAEMI
+          MAIN
         </span>
         <span>PROJECTS</span>
       </HeaderWrapper>

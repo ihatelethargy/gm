@@ -9,7 +9,7 @@ function Landing() {
   return (
     <>
       <TopHeader>
-        <span>WORK!</span>
+        <span>KIMGAEMI</span>
       </TopHeader>
       <BodyWrapper>
         <BodyGridWrapper>
