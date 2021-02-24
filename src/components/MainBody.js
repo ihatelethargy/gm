@@ -1,4 +1,5 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
 import styled from 'styled-components'
 import one from '../img/1.png'
 import two from '../img/2.png'
@@ -8,10 +9,17 @@ import six from '../img/6.jpeg'
 import seven from '../img/7.jpeg'
 
 function MainBody() {
+  const history = useHistory()
   return (
     <>
       <TopHeader>
-        <span>CATEGORY</span>
+        <span
+          onClick={() => {
+            history.push('/')
+          }}
+        >
+          KIMGAEMI
+        </span>
       </TopHeader>
 
       <BodyWrapper>
@@ -59,6 +67,7 @@ const SmallDesc = styled.div`
 const TopHeader = styled.div`
   width: 100%;
   height: 15rem;
+  cursor: pointer;
   /* border: 1px solid red; */
   background-color: #f5f4f4;
   display: flex;
@@ -70,6 +79,9 @@ const TopHeader = styled.div`
     font-size: 8.2rem;
     font-weight: 800;
     font-stretch: expanded;
+  }
+  &:hover {
+    color: gray;
   }
 `
 

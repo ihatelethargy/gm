@@ -9,7 +9,13 @@ function Landing() {
   return (
     <>
       <TopHeader>
-        <span>KIMGAEMI</span>
+        <span
+          onClick={() => {
+            history.push('/')
+          }}
+        >
+          KIMGAEMI
+        </span>
       </TopHeader>
       <BodyWrapper>
         <BodyGridWrapper>
@@ -39,11 +45,16 @@ const TopHeader = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   span {
     font-family: Helvetica;
     font-size: 8.2rem;
     font-weight: 800;
     font-stretch: expanded;
+  }
+
+  &:hover {
+    color: gray;
   }
 `
 

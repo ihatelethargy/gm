@@ -14,13 +14,7 @@ function Header() {
         >
           PROFILE
         </span>
-        <span
-          onClick={() => {
-            history.push('/')
-          }}
-        >
-          MAIN
-        </span>
+
         <span>PROJECTS</span>
       </HeaderWrapper>
     </>
