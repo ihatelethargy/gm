@@ -66,7 +66,7 @@ const ImgContainer = styled.div`
   justify-content: center;
   position: relative;
   width: 90%;
-
+  height: 120rem;
   cursor: pointer;
 `
 const Overlay = styled.div`
