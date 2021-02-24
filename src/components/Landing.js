@@ -39,8 +39,8 @@ function Landing() {
 export default Landing
 
 const TopHeader = styled.div`
-  position: fixed;
-  z-index: 1000;
+  /* position: fixed; */
+  /* z-index: 1000; */
   width: 100%;
   height: 15rem;
   background-color: transparent;
@@ -53,7 +53,7 @@ const TopHeader = styled.div`
     font-size: 8.2rem;
     font-weight: 800;
     font-stretch: expanded;
-    color: #314e52;
+    /* color: #314e52; */
   }
 
   &:hover {
@@ -65,8 +65,8 @@ const ImgContainer = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
-  width: 100%;
-  height: 92vh;
+  width: 90%;
+
   cursor: pointer;
 `
 const Overlay = styled.div`
