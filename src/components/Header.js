@@ -40,8 +40,8 @@ const HeaderWrapper = styled.div`
   background-color: transparent;
 
   span:nth-child(1) {
-    font-size: 1.6rem;
-    margin-left: 2rem;
+    font-size: 3.8rem;
+    margin-left: 5rem;
   }
   span:nth-child(1):hover {
     cursor: pointer;
@@ -49,8 +49,8 @@ const HeaderWrapper = styled.div`
     color: gray;
   }
   span:nth-child(2) {
-    font-size: 3.2rem;
-    margin-right: 9rem;
+    font-size: 4.2rem;
+    margin-right: 17rem;
   }
 
   span:nth-child(2):hover {
