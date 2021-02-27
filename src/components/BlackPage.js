@@ -1,35 +1,28 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import styled from 'styled-components'
 import './BlackPage.scss'
-import one from '../img/1.png'
-import two from '../img/2.png'
-import three from '../img/3.jpeg'
-import four from '../img/9.png'
 
 function BlackPage() {
   const history = useHistory()
-  const imgC = useRef()
-  let btn1 = useRef()
-  let btn2 = useRef()
-  let btn3 = useRef()
-  let btn4 = useRef()
+  const imgArr = [
+    'https://i.ibb.co/sJNGZLZ/desc3.jpg',
+    'https://i.ibb.co/NZPq2L0/desc1.jpg',
+    'https://i.ibb.co/SdWJ81Y/desc2.jpg',
+    'https://i.ibb.co/ZL8ZHF0/desc4.jpg', // one
+    'https://i.ibb.co/THmXmP4/21.jpg',
+    'https://i.ibb.co/s58qRgC/22.jpg',
+    'https://i.ibb.co/vskq68r/23.jpg',
+    'https://i.ibb.co/6gJjxnn/24.jpg', // two
+    'https://i.ibb.co/QPtMf8q/31.jpg',
+    'https://i.ibb.co/K29SVtM/32.jpg',
+    'https://i.ibb.co/qWrtZgz/33.jpg',
+    'https://i.ibb.co/8dYkhMZ/34.jpg',
+  ]
 
-  const handleClick1 = e => {
-    imgC.current.src = 'https://i.ibb.co/NZPq2L0/desc1.jpg'
-  }
-
-  const handleClick2 = e => {
-    imgC.current.src = 'https://i.ibb.co/SdWJ81Y/desc2.jpg'
-  }
-
-  const handleClick3 = e => {
-    imgC.current.src = 'https://i.ibb.co/sJNGZLZ/desc3.jpg'
-  }
-
-  const handleClick4 = e => {
-    imgC.current.src = 'https://i.ibb.co/ZL8ZHF0/desc4.jpg'
-  }
+  const [oneImg, setOneImg] = useState('https://i.ibb.co/SdWJ81Y/desc2.jpg')
+  const [twoImg, setTwoImg] = useState('https://i.ibb.co/THmXmP4/21.jpg')
+  const [threeImg, setThreeImg] = useState('https://i.ibb.co/QPtMf8q/31.jpg')
 
   return (
     <>
@@ -44,56 +37,42 @@ function BlackPage() {
       </TopHeader>
       <BodyWrapper>
         <div className="imgWrapper">
-          <ImgBlock ref={imgC} />
-
+          <img src={oneImg} alt="" />
           <div className="buttonWrapper">
-            <button ref={btn1} onClick={handleClick1}>
-              a
-            </button>
-            <button ref={btn2} onClick={handleClick2}>
-              b
-            </button>
-            <button ref={btn3} onClick={handleClick3}>
-              c
-            </button>
-            <button ref={btn4} onClick={handleClick4}>
-              d
-            </button>
+            <button onClick={() => setOneImg(imgArr[0])}>a</button>
+            <button onClick={() => setOneImg(imgArr[1])}>b</button>
+            <button onClick={() => setOneImg(imgArr[2])}>c</button>
+            <button onClick={() => setOneImg(imgArr[3])}>d</button>
           </div>
         </div>
       </BodyWrapper>
 
       <BodyWrapper>
         <div className="imgWrapper">
-          <ImgBlock ref={imgC} />
-
+          <img src={twoImg} alt="" />
           <div className="buttonWrapper">
-            <button ref={btn1} onClick={handleClick1}>
-              a
-            </button>
-            <button ref={btn2} onClick={handleClick2}>
-              b
-            </button>
-            <button ref={btn3} onClick={handleClick3}>
-              c
-            </button>
-            <button ref={btn4} onClick={handleClick4}>
-              d
-            </button>
+            <button onClick={() => setTwoImg(imgArr[4])}>a</button>
+            <button onClick={() => setTwoImg(imgArr[5])}>b</button>
+            <button onClick={() => setTwoImg(imgArr[6])}>c</button>
+            <button onClick={() => setTwoImg(imgArr[7])}>d</button>
+          </div>
+        </div>
+      </BodyWrapper>
+
+      <BodyWrapper>
+        <div className="imgWrapper">
+          <img src={threeImg} alt="" />
+          <div className="buttonWrapper">
+            <button onClick={() => setThreeImg(imgArr[8])}>a</button>
+            <button onClick={() => setThreeImg(imgArr[9])}>b</button>
+            <button onClick={() => setThreeImg(imgArr[10])}>c</button>
+            <button onClick={() => setThreeImg(imgArr[11])}>d</button>
           </div>
         </div>
       </BodyWrapper>
     </>
   )
 }
-
-const ImgBlock = styled.img.attrs({
-  src: 'https://i.ibb.co/NZPq2L0/desc1.jpg',
-})`
-  display: block;
-  width: 90rem;
-  margin: auto;
-`
 
 const BodyWrapper = styled.div`
   padding-top: 1vh;
