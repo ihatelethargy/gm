@@ -27,14 +27,30 @@ function MainBody() {
           <ImgContainer>
             <img src={one} alt="" />
             <Overlay>
-              <Text>BLACK</Text>
+              <Text>
+                <span
+                  onClick={() => {
+                    history.push('/main/1')
+                  }}
+                >
+                  BLACK
+                </span>
+              </Text>
             </Overlay>
           </ImgContainer>
 
           <ImgContainer>
             <img src={two} alt="" />
             <Overlay>
-              <Text>NOT BLACK</Text>
+              <Text>
+                <span
+                  onClick={() => {
+                    history.push('/main/2')
+                  }}
+                >
+                  NOT BLACK
+                </span>
+              </Text>
             </Overlay>
           </ImgContainer>
         </BodyGridWrapper>
