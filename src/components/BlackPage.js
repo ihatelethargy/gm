@@ -46,18 +46,41 @@ function BlackPage() {
         <div className="imgWrapper">
           <ImgBlock ref={imgC} />
 
-          <button ref={btn1} onClick={handleClick1}>
-            a
-          </button>
-          <button ref={btn2} onClick={handleClick2}>
-            b
-          </button>
-          <button ref={btn3} onClick={handleClick3}>
-            c
-          </button>
-          <button ref={btn4} onClick={handleClick4}>
-            d
-          </button>
+          <div className="buttonWrapper">
+            <button ref={btn1} onClick={handleClick1}>
+              a
+            </button>
+            <button ref={btn2} onClick={handleClick2}>
+              b
+            </button>
+            <button ref={btn3} onClick={handleClick3}>
+              c
+            </button>
+            <button ref={btn4} onClick={handleClick4}>
+              d
+            </button>
+          </div>
+        </div>
+      </BodyWrapper>
+
+      <BodyWrapper>
+        <div className="imgWrapper">
+          <ImgBlock ref={imgC} />
+
+          <div className="buttonWrapper">
+            <button ref={btn1} onClick={handleClick1}>
+              a
+            </button>
+            <button ref={btn2} onClick={handleClick2}>
+              b
+            </button>
+            <button ref={btn3} onClick={handleClick3}>
+              c
+            </button>
+            <button ref={btn4} onClick={handleClick4}>
+              d
+            </button>
+          </div>
         </div>
       </BodyWrapper>
     </>

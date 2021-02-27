@@ -1,6 +1,17 @@
+body {
+  background-color: #f5f4f4;
+}
 .imgWrapper {
   text-align: center;
-  margin-bottom: 20px;
+  margin-top: 30rem;
+  margin-bottom: 50rem;
+  //   border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  .buttonWrapper {
+    display: flex;
+    justify-content: center;
+  }
   img {
     display: block;
     width: 90rem;
