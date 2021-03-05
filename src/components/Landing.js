@@ -49,10 +49,11 @@ const TopHeader = styled.div`
   color: white;
   cursor: pointer;
   span {
-    font-family: Helvetica;
-    font-size: 8.2rem;
+    /* font-family: Helvetica; */
+    font-size: 18.2rem;
     font-weight: 400;
     font-stretch: expanded;
+    font-family: Helvetica;
   }
 
   &:hover {
