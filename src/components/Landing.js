@@ -116,9 +116,5 @@ const BodyGridWrapper = styled.div`
     justify-self: center;
     display: block;
     cursor: pointer;
-    &:hover {
-      opacity: 0.6;
-      transition: all 0.3s ease-in-out;
-    }
   }
 `
