@@ -23,12 +23,17 @@ function BlackPage() {
     'https://i.ibb.co/6rnnN32/42.jpg',
     'https://i.ibb.co/3SfN9wQ/43.jpg',
     'https://i.ibb.co/vV59V3f/44.jpg', // four
+    'https://i.ibb.co/YD5CQsC/101.jpg',
+    'https://i.ibb.co/4ZH8rMr/102.jpg',
+    'https://i.ibb.co/c3FQQsY/103.jpg',
+    'https://i.ibb.co/RQKXtjj/104.jpg',
   ]
 
   const [oneImg, setOneImg] = useState('https://i.ibb.co/SdWJ81Y/desc2.jpg')
   const [twoImg, setTwoImg] = useState('https://i.ibb.co/THmXmP4/21.jpg')
   const [threeImg, setThreeImg] = useState('https://i.ibb.co/QPtMf8q/31.jpg')
   const [fourImg, setFourImg] = useState('https://i.ibb.co/9VVgJ89/41.jpg')
+  const [fiveImg, setFiveImg] = useState('https://i.ibb.co/YD5CQsC/101.jpg')
 
   return (
     <>
@@ -86,6 +91,18 @@ function BlackPage() {
             <button onClick={() => setFourImg(imgArr[13])}></button>
             <button onClick={() => setFourImg(imgArr[14])}></button>
             <button onClick={() => setFourImg(imgArr[15])}></button>
+          </div>
+        </div>
+      </BodyWrapper>
+
+      <BodyWrapper>
+        <div className="imgWrapper">
+          <img src={fiveImg} alt="" />
+          <div className="buttonWrapper">
+            <button onClick={() => setFiveImg(imgArr[16])}></button>
+            <button onClick={() => setFiveImg(imgArr[17])}></button>
+            <button onClick={() => setFiveImg(imgArr[18])}></button>
+            <button onClick={() => setFiveImg(imgArr[19])}></button>
           </div>
         </div>
       </BodyWrapper>

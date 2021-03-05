@@ -53,7 +53,7 @@ function MainBody() {
           </ImgContainer>
         </BodyGridWrapper>
         <SmallDesc>
-          <span>Enjoy it happily</span>
+          <span>Welcom To Kodakii World !</span>
         </SmallDesc>
       </BodyWrapper>
     </>
