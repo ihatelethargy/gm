@@ -1,7 +1,7 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
 import styled from 'styled-components'
-import one from '../img/1.png'
+import one from '../img/mainparttwo.jpeg'
 import two from '../img/firstpart.jpeg'
 import Header from './Header'
 
