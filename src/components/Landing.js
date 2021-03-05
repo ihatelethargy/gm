@@ -80,11 +80,6 @@ const Overlay = styled.div`
   opacity: 0;
   transition: 0.5s ease;
   background-color: #fff;
-  &:hover {
-    opacity: 0.5;
-    Text {
-    }
-  }
 `
 const Text = styled.div`
   color: black;
