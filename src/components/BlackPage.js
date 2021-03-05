@@ -39,7 +39,7 @@ function BlackPage() {
             history.push('/')
           }}
         >
-          KODAKII
+          KODAKii
         </span>
       </TopHeader>
       <BodyWrapper>

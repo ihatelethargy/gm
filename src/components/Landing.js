@@ -51,7 +51,7 @@ const TopHeader = styled.div`
   span {
     /* font-family: Helvetica; */
     font-size: 18.2rem;
-    font-weight: 400;
+    font-weight: 300;
     font-stretch: expanded;
     font-family: Helvetica;
   }

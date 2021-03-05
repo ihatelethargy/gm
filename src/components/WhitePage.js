@@ -45,7 +45,7 @@ function WhitePage() {
             history.push('/')
           }}
         >
-          KODAKII
+          KODAKii
         </span>
       </TopHeader>
       <BodyWrapper>
