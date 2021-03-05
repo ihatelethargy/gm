@@ -11,9 +11,8 @@ import BlackPage from '../components/BlackPage'
 function Main() {
   return (
     <>
-      <Route component={Header} />
+      {/* <Route component={Header} /> */}
       <Route component={Landing} path="/" exact />
-      {/* <BlankTop DesktopMargin="5" TabletMargin="5" MobileMargin="5" /> */}
       <Route component={MainBody} path="/main" exact />
       <Route component={Profile} path="/profile" exact />
       <Route component={BlackPage} path="/main/1" exact />

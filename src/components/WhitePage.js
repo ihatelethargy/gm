@@ -1,6 +1,8 @@
 import React, { useRef, useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import styled from 'styled-components'
+import Header from './Header'
+import HeaderPart from './HeaderPart'
 import './WhitePage.scss'
 
 function WhitePage() {
@@ -36,6 +38,7 @@ function WhitePage() {
 
   return (
     <>
+      <HeaderPart />
       <TopHeader>
         <span
           onClick={() => {
@@ -109,27 +112,30 @@ function WhitePage() {
 }
 
 const BodyWrapper = styled.div`
-  padding-top: 1vh;
+  padding-top: 0vh;
   width: 100%;
   height: auto;
   background-color: #f5f4f4;
+  /* border: 1px solid red; */
 `
 
 const TopHeader = styled.div`
+  padding-top: 5rem;
   width: 100%;
   height: 15rem;
-  cursor: pointer;
   background-color: #f5f4f4;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 8rem;
+  color: black;
+  cursor: pointer;
   span {
     font-family: Helvetica;
     font-size: 8.2rem;
-    font-weight: 800;
+    font-weight: 400;
     font-stretch: expanded;
   }
+
   &:hover {
     color: gray;
   }

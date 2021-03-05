@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import styled from 'styled-components'
 import './BlackPage.scss'
+import HeaderPart from './HeaderPart'
 
 function BlackPage() {
   const history = useHistory()
@@ -21,8 +22,7 @@ function BlackPage() {
     'https://i.ibb.co/9VVgJ89/41.jpg',
     'https://i.ibb.co/6rnnN32/42.jpg',
     'https://i.ibb.co/3SfN9wQ/43.jpg',
-    'https://i.ibb.co/vV59V3f/44.jpg',
-    // four
+    'https://i.ibb.co/vV59V3f/44.jpg', // four
   ]
 
   const [oneImg, setOneImg] = useState('https://i.ibb.co/SdWJ81Y/desc2.jpg')
@@ -32,6 +32,7 @@ function BlackPage() {
 
   return (
     <>
+      <HeaderPart />
       <TopHeader>
         <span
           onClick={() => {
@@ -98,22 +99,23 @@ const BodyWrapper = styled.div`
   height: auto;
   background-color: #f5f4f4;
 `
-
 const TopHeader = styled.div`
+  padding-top: 5rem;
   width: 100%;
   height: 15rem;
-  cursor: pointer;
   background-color: #f5f4f4;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 8rem;
+  color: black;
+  cursor: pointer;
   span {
     font-family: Helvetica;
     font-size: 8.2rem;
-    font-weight: 800;
+    font-weight: 400;
     font-stretch: expanded;
   }
+
   &:hover {
     color: gray;
   }

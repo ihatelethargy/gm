@@ -2,12 +2,14 @@ import React from 'react'
 import { useHistory } from 'react-router-dom'
 import styled from 'styled-components'
 import one from '../img/1.png'
-import two from '../img/2.png'
+import two from '../img/firstpart.jpeg'
+import Header from './Header'
 
 function MainBody() {
   const history = useHistory()
   return (
     <>
+      <Header />
       <TopHeader>
         <span
           onClick={() => {
@@ -29,7 +31,7 @@ function MainBody() {
                     history.push('/main/1')
                   }}
                 >
-                  BLACK
+                  SCENE
                 </span>
               </Text>
             </Overlay>
@@ -44,7 +46,7 @@ function MainBody() {
                     history.push('/main/2')
                   }}
                 >
-                  NOT BLACK
+                  WORK
                 </span>
               </Text>
             </Overlay>
@@ -78,22 +80,23 @@ const SmallDesc = styled.div`
 `
 
 const TopHeader = styled.div`
+  padding-top: 5rem;
   width: 100%;
   height: 15rem;
-  cursor: pointer;
-  color: white;
-  /* border: 1px solid red; */
+  border-bottom: 1px solid black;
   background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 8rem;
+  color: white;
+  cursor: pointer;
   span {
     font-family: Helvetica;
     font-size: 8.2rem;
-    font-weight: 800;
+    font-weight: 400;
     font-stretch: expanded;
   }
+
   &:hover {
     color: gray;
   }
@@ -136,10 +139,10 @@ const Text = styled.div`
 `
 
 const BodyWrapper = styled.div`
-  padding-top: 1vh;
   width: 100%;
   height: 100vh;
   background-color: black;
+  border-top: 1px solid black;
 `
 const BodyGridWrapper = styled.div`
   width: 100%;
