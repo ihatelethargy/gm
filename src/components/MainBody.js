@@ -92,7 +92,7 @@ const TopHeader = styled.div`
   cursor: pointer;
   span {
     font-family: Helvetica;
-    font-size: 8.2rem;
+    font-size: 6.2rem;
     font-weight: 400;
     font-stretch: expanded;
   }
