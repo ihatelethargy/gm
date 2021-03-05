@@ -26,9 +26,7 @@ function Landing() {
             }}
           >
             <img src={LandingImg} alt="" />
-            <Overlay>
-              <Text>Main</Text>
-            </Overlay>
+            {/* <Overlay></Overlay> */}
           </ImgContainer>
         </BodyGridWrapper>
       </BodyWrapper>
