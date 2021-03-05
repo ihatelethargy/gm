@@ -45,7 +45,7 @@ function WhitePage() {
             history.push('/')
           }}
         >
-          KIMGAEMI
+          KODAKII
         </span>
       </TopHeader>
       <BodyWrapper>

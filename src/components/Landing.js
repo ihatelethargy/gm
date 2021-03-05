@@ -16,7 +16,7 @@ function Landing() {
             history.push('/')
           }}
         >
-          KIMGAEMI
+          KODAKII
         </span>
       </TopHeader>
       <BodyWrapper>

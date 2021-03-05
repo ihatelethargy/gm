@@ -14,7 +14,7 @@ function Profile() {
             history.push('/')
           }}
         >
-          KIMGAEMI
+          KODAKII
         </span>
       </TopHeader>
       <BodyWrapper>

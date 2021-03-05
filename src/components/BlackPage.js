@@ -39,7 +39,7 @@ function BlackPage() {
             history.push('/')
           }}
         >
-          KIMGAEMI
+          KODAKII
         </span>
       </TopHeader>
       <BodyWrapper>

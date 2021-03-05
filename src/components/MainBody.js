@@ -16,7 +16,7 @@ function MainBody() {
             history.push('/')
           }}
         >
-          KIMGAEMI
+          KODAKII
         </span>
       </TopHeader>
 
