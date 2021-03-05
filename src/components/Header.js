@@ -9,7 +9,7 @@ function Header() {
       <HeaderWrapper>
         <span
           onClick={() => {
-            history.push('./profile')
+            history.push('/profile')
           }}
         >
           PROFILE
@@ -17,7 +17,7 @@ function Header() {
 
         <span
           onClick={() => {
-            history.push('./main')
+            history.push('/main')
           }}
         >
           PROJECTS
@@ -39,8 +39,10 @@ const HeaderWrapper = styled.div`
   width: 100%;
   height: 8vh;
   background-color: transparent;
+  cursor: crosshair;
 
   span:nth-child(1) {
+    cursor: crosshair;
     font-size: 3.8rem;
     font-family: Helvetica;
     /* color: #314e52; */
@@ -48,12 +50,13 @@ const HeaderWrapper = styled.div`
     /* margin-left: 5rem; */
   }
   span:nth-child(1):hover {
-    cursor: pointer;
+    cursor: crosshair;
     font-size: 3.8rem;
     font-family: Helvetica;
-    /* color: #314e52; */
+    color: #314e52;
   }
   span:nth-child(2) {
+    cursor: crosshair;
     font-size: 3.8rem;
     font-family: Helvetica;
     /* margin-right: 17rem; */
@@ -62,6 +65,7 @@ const HeaderWrapper = styled.div`
   }
 
   span:nth-child(3) {
+    cursor: crosshair;
     font-size: 3.8rem;
     font-family: Helvetica;
     /* margin-right: 17rem; */
@@ -69,9 +73,10 @@ const HeaderWrapper = styled.div`
   }
 
   span:nth-child(2):hover {
-    cursor: pointer;
+    cursor: crosshair;
+
     color: gray;
     font-family: Helvetica;
-    /* color: #314e52; */
+    color: #314e52;
   }
 `

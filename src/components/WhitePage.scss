@@ -1,0 +1,37 @@
+body {
+  background-color: #f5f4f4;
+}
+.imgWrapper {
+  text-align: center;
+  margin-top: 20rem;
+  margin-bottom: 50rem;
+  display: flex;
+  flex-direction: column;
+  .buttonWrapper {
+    display: flex;
+    justify-content: center;
+  }
+  img {
+    display: block;
+    width: 90rem;
+    margin: auto;
+  }
+  button {
+    height: 0.5rem;
+    width: 12rem;
+    font-size: 3rem;
+
+    // border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: #1e212d;
+    color: #e7e6e1;
+    margin: 12rem 0;
+    cursor: pointer;
+    &:hover {
+      background-color: #e7e6e1;
+      color: #1e212d;
+      transition: all 2s ease-in-oute;
+    }
+  }
+}

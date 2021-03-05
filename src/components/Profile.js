@@ -19,8 +19,9 @@ function Profile() {
       </TopHeader>
       <BodyWrapper>
         <BodyGridWrapper>
-          <BlankTop DesktopMargin="0" TabletMargin="5" MobileMargin="5" />
+          {/* <BlankTop DesktopMargin="0" TabletMargin="5" MobileMargin="5" /> */}
           {/* <img src={ProfileImg} alt="" /> */}
+          asdff
         </BodyGridWrapper>
       </BodyWrapper>
     </>
@@ -36,7 +37,7 @@ const TopHeader = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
+  cursor: crosshair;
   span {
     font-family: Helvetica;
     font-size: 8.2rem;

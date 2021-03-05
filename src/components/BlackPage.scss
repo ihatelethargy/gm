@@ -17,20 +17,21 @@ body {
     margin: auto;
   }
   button {
-    height: 8rem;
-    width: 8rem;
+    height: 0.5rem;
+    width: 12rem;
     font-size: 3rem;
-    border-radius: 50%;
+
+    // border-radius: 50%;
     border: none;
     outline: none;
     background-color: #1e212d;
-    color: #faf3e0;
-    margin: 2rem 4rem;
+    color: #e7e6e1;
+    margin: 12rem 0;
     cursor: pointer;
     &:hover {
-      background-color: #faf3e0;
+      background-color: #e7e6e1;
       color: #1e212d;
-      //   border: 1px solid #1e212d;
+      transition: all 2s ease-in-oute;
     }
   }
 }
