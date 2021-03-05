@@ -16,7 +16,7 @@ function MainBody() {
             history.push('/')
           }}
         >
-          KODAKII
+          KODAKii
         </span>
       </TopHeader>
 

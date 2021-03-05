@@ -16,7 +16,7 @@ function Landing() {
             history.push('/')
           }}
         >
-          KODAKII
+          KODAKii
         </span>
       </TopHeader>
       <BodyWrapper>
