@@ -39,13 +39,10 @@ function Landing() {
 export default Landing
 
 const TopHeader = styled.div`
-  /* position: fixed; */
-  /* z-index: 1000; */
   padding-top: 5rem;
-  border: 1px solid black;
   width: 100%;
   height: 15rem;
-  /* background-color: transparent; */
+  border-bottom: 1px solid black;
   background-color: black;
   display: flex;
   align-items: center;
@@ -72,6 +69,7 @@ const ImgContainer = styled.div`
   width: 90%;
   height: 120rem;
   cursor: pointer;
+  border: 1px solid black; // eas ok
 `
 const Overlay = styled.div`
   position: absolute;
@@ -109,6 +107,7 @@ const BodyWrapper = styled.div`
   /* padding-top: 15rem; */
   width: 100%;
   height: 100vh;
+  border-top: 1px solid black;
   /* background-color: white; */
   background-color: black;
 `
@@ -119,7 +118,7 @@ const BodyGridWrapper = styled.div`
   justify-content: center;
   align-items: center;
   img {
-    padding-top: 10rem;
+    /* padding-top: 10rem; */
     width: 100%;
     justify-self: center;
     display: block;
