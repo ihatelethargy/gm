@@ -1,7 +1,7 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
 import styled from 'styled-components'
-import LandingImg from '../img/mainlanding.jpeg'
+import LandingImg from '../img/ladingImgsun.jpeg'
 import BlankTop from './BlankTop'
 
 function Landing() {
@@ -19,7 +19,7 @@ function Landing() {
       </TopHeader>
       <BodyWrapper>
         <BodyGridWrapper>
-          {/* <img src={LandingImg} alt="" /> */}
+          {/* <img src={LandingImg} alt="" /> */}ㄴ
           <ImgContainer
             onClick={() => {
               history.push('./main')
@@ -41,19 +41,23 @@ export default Landing
 const TopHeader = styled.div`
   /* position: fixed; */
   /* z-index: 1000; */
+  padding-top: 5rem;
+  border: 1px solid black;
   width: 100%;
   height: 15rem;
-  background-color: transparent;
+  /* background-color: transparent; */
+  background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
   cursor: pointer;
   span {
     font-family: Helvetica;
     font-size: 8.2rem;
-    font-weight: 800;
+    font-weight: 400;
     font-stretch: expanded;
-    /* color: #314e52; */
+    /* color: white; */
   }
 
   &:hover {
@@ -105,8 +109,8 @@ const BodyWrapper = styled.div`
   /* padding-top: 15rem; */
   width: 100%;
   height: 100vh;
-  background-color: #f5f4f4;
-  /* background-color: black; */
+  /* background-color: white; */
+  background-color: black;
 `
 const BodyGridWrapper = styled.div`
   /* border: 1px solid red; */
@@ -115,6 +119,7 @@ const BodyGridWrapper = styled.div`
   justify-content: center;
   align-items: center;
   img {
+    padding-top: 10rem;
     width: 100%;
     justify-self: center;
     display: block;

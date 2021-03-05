@@ -32,6 +32,7 @@ export default Header
 const HeaderWrapper = styled.div`
   display: flex;
   z-index: 1000;
+  color: white;
   justify-content: space-around;
   position: fixed;
   bottom: 0;

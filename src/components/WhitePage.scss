@@ -17,12 +17,12 @@ body {
     margin: auto;
   }
   button {
-    height: 0.5rem;
+    height: 1rem;
     width: 12rem;
     font-size: 3rem;
-
-    // border-radius: 50%;
+    padding: 0.3rem;
     border: none;
+    // border: 1px solid red;
     outline: none;
     background-color: #1e212d;
     color: #e7e6e1;

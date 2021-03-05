@@ -3,10 +3,6 @@ import { useHistory } from 'react-router-dom'
 import styled from 'styled-components'
 import one from '../img/1.png'
 import two from '../img/2.png'
-import three from '../img/3.jpeg'
-import four from '../img/4.png'
-import six from '../img/6.jpeg'
-import seven from '../img/7.jpeg'
 
 function MainBody() {
   const history = useHistory()
@@ -68,7 +64,8 @@ const SmallDesc = styled.div`
   width: 100%;
   height: 20rem;
   /* border: 1px solid green; */
-  background-color: #f5f4f4;
+  background-color: black;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,8 +81,9 @@ const TopHeader = styled.div`
   width: 100%;
   height: 15rem;
   cursor: pointer;
+  color: white;
   /* border: 1px solid red; */
-  background-color: #f5f4f4;
+  background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -108,9 +106,6 @@ const ImgContainer = styled.div`
   width: 90%;
   margin-bottom: 2rem;
   cursor: pointer;
-  /* &:hover {
-    opacity: 0.5;
-  } */
 `
 const Overlay = styled.div`
   position: absolute;
@@ -144,7 +139,7 @@ const BodyWrapper = styled.div`
   padding-top: 1vh;
   width: 100%;
   height: 100vh;
-  background-color: #f5f4f4;
+  background-color: black;
 `
 const BodyGridWrapper = styled.div`
   width: 100%;
