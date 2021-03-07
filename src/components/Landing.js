@@ -11,17 +11,21 @@ function Landing() {
     <>
       <Header />
       <TopHeader>
-        <span
-          onClick={() => {
-            history.push('/')
-          }}
-        >
-          KODAKii
-        </span>
+        <HeaderWrapper>
+          <span className="topdakii">Sculptor Kimgaemi X Coder Kujiira</span>
+          <span
+            className="kodakii"
+            onClick={() => {
+              history.push('/')
+            }}
+          >
+            KODAKi<span className="bright">i</span>
+          </span>
+          <span className="bottomdakii">Chimpanzees work with boogers </span>
+        </HeaderWrapper>
       </TopHeader>
       <BodyWrapper>
         <BodyGridWrapper>
-          {/* <img src={LandingImg} alt="" /> */}ㄴ
           <ImgContainer
             onClick={() => {
               history.push('./main')
@@ -37,10 +41,24 @@ function Landing() {
 
 export default Landing
 
+const HeaderWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .topdakii {
+    font-size: 2.4rem;
+  }
+
+  .bottomdakii {
+    font-size: 5.2rem;
+    /* border: 3px solid red; */
+  }
+`
+
 const TopHeader = styled.div`
-  padding-top: 5rem;
+  padding-top: 2rem;
   width: 100%;
-  height: 15rem;
+  height: 40rem;
   border-bottom: 1px solid black;
   background-color: black;
   display: flex;
@@ -48,20 +66,23 @@ const TopHeader = styled.div`
   justify-content: center;
   color: white;
   cursor: pointer;
-  span {
+  .kodakii {
     /* font-family: Helvetica; */
     font-size: 18.2rem;
     font-weight: 300;
     font-stretch: expanded;
     font-family: Helvetica;
   }
-
+  .bright {
+    color: #ea8685;
+  }
   &:hover {
     color: gray;
   }
 `
 
 const ImgContainer = styled.div`
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
   position: relative;
