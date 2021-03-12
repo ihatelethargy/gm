@@ -12,7 +12,7 @@ function Landing() {
       <Header />
       <TopHeader>
         <HeaderWrapper>
-          <span className="topdakii">Sculptor Kimgaemi X Coder Kujiira</span>
+          <span className="topdakii">Sculptor Kimgaemi X Coder Prokujiira</span>
           <span
             className="kodakii"
             onClick={() => {

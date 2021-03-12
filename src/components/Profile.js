@@ -19,9 +19,7 @@ function Profile() {
       </TopHeader>
       <BodyWrapper>
         <BodyGridWrapper>
-          {/* <BlankTop DesktopMargin="0" TabletMargin="5" MobileMargin="5" /> */}
-          {/* <img src={ProfileImg} alt="" /> */}
-          asdff
+          
         </BodyGridWrapper>
       </BodyWrapper>
     </>
