@@ -32,6 +32,9 @@ function MainBody() {
                   }}
                 >
                   SCENE
+                  <br />
+                  <br />
+                  click me
                 </span>
               </Text>
             </Overlay>
@@ -47,6 +50,9 @@ function MainBody() {
                   }}
                 >
                   WORK
+                  <br />
+                  <br />
+                  click me
                 </span>
               </Text>
             </Overlay>
