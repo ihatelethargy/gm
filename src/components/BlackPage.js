@@ -131,6 +131,7 @@ const TopHeader = styled.div`
     font-size: 8.2rem;
     font-weight: 400;
     font-stretch: expanded;
+    margin: 0 2rem;
   }
 
   &:hover {

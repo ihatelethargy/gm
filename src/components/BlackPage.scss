@@ -18,15 +18,16 @@ body {
   }
 
   button {
-    height: 0.5rem;
+    height: 1rem;
     width: 12rem;
     font-size: 3rem;
+    // margin: 0 2rem;
     // border-radius: 50%;
     // border: 1px solid red;
     outline: none;
     background-color: #1e212d;
     color: #e7e6e1;
-    margin: 12rem 0.3rem;
+    margin: 12rem 2rem;
     cursor: pointer;
     &:hover {
       background-color: #e7e6e1;
