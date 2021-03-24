@@ -34,6 +34,19 @@ function Profile() {
                 Kim Jung Hyun
               </p>
             </a>
+
+            <a href="https://www.instagram.com/kim.gaemi/">
+              <p>
+                <InstagramOutlined
+                  style={{
+                    fontSize: '50px',
+                    color: '#000',
+                    marginRight: '30px',
+                  }}
+                />
+                Kim Gae Mi
+              </p>
+            </a>
           </ContentWrapper>
         </BodyGridWrapper>
       </BodyWrapper>
@@ -90,5 +103,6 @@ const BodyGridWrapper = styled.div`
   p {
     color: #000;
     font-size: 5.2rem;
+    margin-bottom: 3rem;
   }
 `
