@@ -5,6 +5,8 @@ import one from '../img/mainparttwo.jpeg'
 import two from '../img/firstpart.jpeg'
 import Header from './Header'
 
+import { SwapRightOutlined } from '@ant-design/icons'
+
 function MainBody() {
   const history = useHistory()
   return (
@@ -31,10 +33,7 @@ function MainBody() {
                     history.push('/main/1')
                   }}
                 >
-                  SCENE
-                  <br />
-                  <br />
-                  click me
+                  SCENE <SwapRightOutlined />
                 </span>
               </Text>
             </Overlay>
@@ -49,10 +48,7 @@ function MainBody() {
                     history.push('/main/2')
                   }}
                 >
-                  WORK
-                  <br />
-                  <br />
-                  click me
+                  WORK <SwapRightOutlined />
                 </span>
               </Text>
             </Overlay>
