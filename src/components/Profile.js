@@ -31,7 +31,7 @@ function Profile() {
                     marginRight: '30px',
                   }}
                 />
-                Kim Jung Hyun
+                @kodakii.work
               </p>
             </a>
 
@@ -44,7 +44,7 @@ function Profile() {
                     marginRight: '30px',
                   }}
                 />
-                Kim Gae Mi
+                @kim.gaemi
               </p>
             </a>
           </ContentWrapper>

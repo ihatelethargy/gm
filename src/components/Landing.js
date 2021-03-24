@@ -19,7 +19,7 @@ function Landing() {
               history.push('/')
             }}
           >
-            KODAKi<span className="bright">i</span>
+            KODAKii
           </span>
           <span className="bottomdakii">Chimpanzees work with boogers </span>
         </HeaderWrapper>
