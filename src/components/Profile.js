@@ -1,8 +1,9 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
 import styled from 'styled-components'
-import ProfileImg from '../img/profileimg.png'
+import ProfileImg from '../img/profileImg.jpeg'
 import BlankTop from './BlankTop'
+import { InstagramOutlined } from '@ant-design/icons'
 
 function Profile() {
   const history = useHistory()
@@ -19,7 +20,21 @@ function Profile() {
       </TopHeader>
       <BodyWrapper>
         <BodyGridWrapper>
-          
+          <img src={ProfileImg} alt="" />
+          <ContentWrapper>
+            <a href="https://www.instagram.com/kodakii.work/">
+              <p>
+                <InstagramOutlined
+                  style={{
+                    fontSize: '50px',
+                    color: '#000',
+                    marginRight: '30px',
+                  }}
+                />
+                Kim Jung Hyun
+              </p>
+            </a>
+          </ContentWrapper>
         </BodyGridWrapper>
       </BodyWrapper>
     </>
@@ -27,6 +42,8 @@ function Profile() {
 }
 
 export default Profile
+
+const ContentWrapper = styled.div``
 
 const TopHeader = styled.div`
   width: 100%;
@@ -57,19 +74,21 @@ const BodyWrapper = styled.div`
 const BodyGridWrapper = styled.div`
   width: 100%;
   height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  @media only screen and (min-width: 768px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  @media only screen and (min-width: 375px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  gap: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   /* border: 1px solid red; */
   img {
-    width: 35rem;
-    height: 35rem;
-    border-radius: 50%;
+    width: 80%;
+    height: auto;
+    margin-bottom: 10rem;
+    border-radius: 0.8rem;
+  }
+  a {
+    text-decoration: none;
+  }
+  p {
+    color: #000;
+    font-size: 5.2rem;
   }
 `
