@@ -34,6 +34,7 @@ function BlackPage() {
   const [threeImg, setThreeImg] = useState('https://i.ibb.co/QPtMf8q/31.jpg')
   const [fourImg, setFourImg] = useState('https://i.ibb.co/9VVgJ89/41.jpg')
   const [fiveImg, setFiveImg] = useState('https://i.ibb.co/YD5CQsC/101.jpg')
+  const [oneTrigger, setOneTrigger] = useState(0)
 
   return (
     <>
@@ -51,7 +52,13 @@ function BlackPage() {
         <div className="imgWrapper">
           <img src={oneImg} alt="" />
           <div className="buttonWrapper">
-            <button onClick={() => setOneImg(imgArr[0])}></button>
+            <button
+              className="testBtn"
+              onClick={() => {
+                setOneImg(imgArr[0])
+                setOneTrigger(0)
+              }}
+            ></button>
             <button onClick={() => setOneImg(imgArr[1])}></button>
             <button onClick={() => setOneImg(imgArr[2])}></button>
             <button onClick={() => setOneImg(imgArr[3])}></button>
@@ -115,6 +122,9 @@ const BodyWrapper = styled.div`
   width: 100%;
   height: auto;
   background-color: #f5f4f4;
+  .testBtn {
+    background-color: ${props => (props.oneTrigger === 0 ? 'red' : '#1e212d')};
+  }
 `
 const TopHeader = styled.div`
   padding-top: 5rem;
@@ -131,9 +141,7 @@ const TopHeader = styled.div`
     font-size: 8.2rem;
     font-weight: 400;
     font-stretch: expanded;
-    margin: 0 2rem;
   }
-
   &:hover {
     color: gray;
   }
